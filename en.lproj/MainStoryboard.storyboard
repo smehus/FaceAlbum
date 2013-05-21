@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="y5a-Gg-QUn">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -51,12 +51,20 @@
                                     <outlet property="delegate" destination="2" id="qfO-SW-KsJ"/>
                                 </connections>
                             </collectionView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-fj-nyM">
+                                <items>
+                                    <navigationItem title="Photo Feed" id="Grv-sz-k3m"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pp3-z1-ItY" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="6GI-Es-xBO"/>
+                            <constraint firstItem="EH0-fj-nyM" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Bzg-eq-V9r"/>
                             <constraint firstItem="Pp3-z1-ItY" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="FEG-Il-a0l"/>
                             <constraint firstItem="Pp3-z1-ItY" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="QHx-t1-eel"/>
+                            <constraint firstItem="Pp3-z1-ItY" firstAttribute="top" secondItem="EH0-fj-nyM" secondAttribute="bottom" type="default" id="cBw-jf-dj8"/>
+                            <constraint firstItem="EH0-fj-nyM" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="gKT-K1-FoR"/>
+                            <constraint firstItem="EH0-fj-nyM" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="qsn-iz-5wq"/>
                             <constraint firstItem="Pp3-z1-ItY" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="s3W-9K-CyY"/>
                         </constraints>
                     </view>

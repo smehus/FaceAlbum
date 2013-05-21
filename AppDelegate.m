@@ -14,6 +14,10 @@
 {
  
     self.accountStore = [[ACAccountStore alloc] init];
+    
+    
+    UIColor *tintColor = [UIColor blueColor];
+    [[UINavigationBar appearance] setTintColor:tintColor];
 
     return YES;
 }
